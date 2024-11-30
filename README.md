@@ -14,7 +14,7 @@ Este projeto implementa um conjunto de funções em C para manipulação de matr
 
 ## Estrutura do Projeto
 
-O projeto é composto por três arquivos principais:
+O projeto é composto por três ficheiros principais:
 
 1. `header.h`: Contém as declarações de estruturas e funções.
 2. `source.c`: Implementa as funções declaradas no header.
