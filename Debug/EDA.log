@@ -1,0 +1,9 @@
+﻿  main.c
+C:\Users\andre\source\repos\EDA\EDA\main.c(63,27): warning C4013: 'malloc' undefined; assuming extern returning int
+C:\Users\andre\source\repos\EDA\EDA\main.c(63,53): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\andre\source\repos\EDA\EDA\main.c(67,50): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\andre\source\repos\EDA\EDA\main.c(77,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+C:\Users\andre\source\repos\EDA\EDA\main.c(90,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+C:\Users\andre\source\repos\EDA\EDA\main.c(99,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+C:\Users\andre\source\repos\EDA\EDA\main.c(113,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+  EDA.vcxproj -> C:\Users\andre\source\repos\EDA\Debug\EDA.exe

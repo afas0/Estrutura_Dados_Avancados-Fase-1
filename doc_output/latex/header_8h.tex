@@ -1,0 +1,301 @@
+\doxysection{header.\+h File Reference}
+\hypertarget{header_8h}{}\label{header_8h}\index{header.h@{header.h}}
+
+
+Declarações das funções e estruturas.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_elemento}{Elemento}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar um elemento da matriz. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_matriz}{Matriz}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{header_8h_aa54b01872801327b363e1bb1873a7f08}\label{header_8h_aa54b01872801327b363e1bb1873a7f08} 
+typedef struct Elemento {\bfseries Elemento}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar um elemento da matriz. \end{DoxyCompactList}\item 
+\Hypertarget{header_8h_a511b8f0ddc1f582f002028ce9dd11f5e}\label{header_8h_a511b8f0ddc1f582f002028ce9dd11f5e} 
+typedef struct Matriz {\bfseries Matriz}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_aa97b369cffc8d677119a2825f64ba89c}{ler\+Ficheiro}} (char \texorpdfstring{$\ast$}{*}ficheiro\+Txt)
+\begin{DoxyCompactList}\small\item\em Lê os dados de um ficheiro de texto e cria uma matriz a partir deles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a5cc30657a2083fa215e4294b2c65deb8}{imprimir\+Matriz}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Imprime os dados da matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_elemento}{Elemento}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a2e995c7256d67d53467706bea5a3a1d1}{Criar\+Elemento}} (int valor)
+\begin{DoxyCompactList}\small\item\em Cria um novo elemento da matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a3cba495f8029fa440cdcfe57dd4e6076}{Alterar\+Elemento}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}inicio, int \texorpdfstring{$\ast$}{*}endereco\+Antigo, int novo\+Valor)
+\begin{DoxyCompactList}\small\item\em Altera o valor de um elemento da matriz. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{header_8h_a216a64fc860419b0a86d453804305545}{encontrar\+Endereco\+Por\+Coordenadas}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int linha, int coluna)
+\begin{DoxyCompactList}\small\item\em Encontra o endereço de memória de um elemento da matriz com base em suas coordenadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a183e592c9361e27798496d9df86ea8fe}{adicionar\+Nova\+Linha}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova linha à matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_ad8cc0c3c991faaad0fb978b915b1caef}{adicionar\+Nova\+Coluna}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova coluna à matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a21d2aad173ba45788d673bf474442e9f}{remover\+Linha}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int linha)
+\begin{DoxyCompactList}\small\item\em Remove uma linha específica da matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_accc8fc328f6173f56159619e9a3e16d1}{remover\+Coluna}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int coluna)
+\begin{DoxyCompactList}\small\item\em Remove uma coluna da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{header_8h_a668883f8c93cffdf3d9d754316009b25}{encontrar\+Maior\+Elemento}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Encontra o maior elemento na matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a657d3f9e9209b6bf574072725cda2228}{soma\+Matriz}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int posicao)
+\begin{DoxyCompactList}\small\item\em Soma os elementos da matriz até uma determinada posição e remove a linha e a coluna do maior elemento. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a4c13959933ea63cd594a5166946dd1bd}{free\+Matriz}} (\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para a matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declarações das funções e estruturas. 
+
+\begin{DoxyAuthor}{Author}
+Andre 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{header_8h_ad8cc0c3c991faaad0fb978b915b1caef}\label{header_8h_ad8cc0c3c991faaad0fb978b915b1caef} 
+\index{header.h@{header.h}!adicionarNovaColuna@{adicionarNovaColuna}}
+\index{adicionarNovaColuna@{adicionarNovaColuna}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{adicionarNovaColuna()}{adicionarNovaColuna()}}
+{\footnotesize\ttfamily void adicionar\+Nova\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova coluna à matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Contador para acompanhar a posição atual
+
+\texorpdfstring{$<$}{<} Cria um novo elemento com valor \textquotesingle{}0\textquotesingle{}
+
+\texorpdfstring{$<$}{<} Avança para o próximo elemento após o novo elemento adicionado\Hypertarget{header_8h_a183e592c9361e27798496d9df86ea8fe}\label{header_8h_a183e592c9361e27798496d9df86ea8fe} 
+\index{header.h@{header.h}!adicionarNovaLinha@{adicionarNovaLinha}}
+\index{adicionarNovaLinha@{adicionarNovaLinha}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{adicionarNovaLinha()}{adicionarNovaLinha()}}
+{\footnotesize\ttfamily void adicionar\+Nova\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova linha à matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Cria uma nova linha dependendo do tamanho da num\+Colunas
+
+\texorpdfstring{$<$}{<} Vai para o último elemento da matriz
+
+\texorpdfstring{$<$}{<} Adiciona novos elementos no final da matriz
+
+\texorpdfstring{$<$}{<} Cria um novo elemento com valor 0\Hypertarget{header_8h_a3cba495f8029fa440cdcfe57dd4e6076}\label{header_8h_a3cba495f8029fa440cdcfe57dd4e6076} 
+\index{header.h@{header.h}!AlterarElemento@{AlterarElemento}}
+\index{AlterarElemento@{AlterarElemento}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{AlterarElemento()}{AlterarElemento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*} Alterar\+Elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{int \texorpdfstring{$\ast$}{*}}]{endereco\+Antigo,  }\item[{int}]{novo\+Valor }\end{DoxyParamCaption})}
+
+
+
+Altera o valor de um elemento da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Ponteiro para o início da matriz \\
+\hline
+{\em endereco\+Antigo} & Ponteiro para o endereço do valor do elemento a ser alterado \\
+\hline
+{\em novo\+Valor} & Novo valor a ser atribuído ao elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o início da matriz 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Se o elemento com o endereço de memória fornecido for encontrado, altera o valor\Hypertarget{header_8h_a2e995c7256d67d53467706bea5a3a1d1}\label{header_8h_a2e995c7256d67d53467706bea5a3a1d1} 
+\index{header.h@{header.h}!CriarElemento@{CriarElemento}}
+\index{CriarElemento@{CriarElemento}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{CriarElemento()}{CriarElemento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_elemento}{Elemento}} \texorpdfstring{$\ast$}{*} Criar\+Elemento (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Cria um novo elemento da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor do novo elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o novo elemento 
+\end{DoxyReturn}
+\Hypertarget{header_8h_a216a64fc860419b0a86d453804305545}\label{header_8h_a216a64fc860419b0a86d453804305545} 
+\index{header.h@{header.h}!encontrarEnderecoPorCoordenadas@{encontrarEnderecoPorCoordenadas}}
+\index{encontrarEnderecoPorCoordenadas@{encontrarEnderecoPorCoordenadas}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{encontrarEnderecoPorCoordenadas()}{encontrarEnderecoPorCoordenadas()}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} encontrar\+Endereco\+Por\+Coordenadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Encontra o endereço de memória de um elemento da matriz com base em suas coordenadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz \\
+\hline
+{\em linha} & Linha do elemento desejado \\
+\hline
+{\em coluna} & Coluna do elemento desejado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o endereço de memória do valor do elemento, ou NULL se não encontrado 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Calcula a posição do elemento na lista ligada com base nas coordenadas
+
+\texorpdfstring{$<$}{<} Percorre a lista ligada até a posição do elemento desejado
+
+\texorpdfstring{$<$}{<} Retorna o endereço de memória do valor do elemento encontrado\Hypertarget{header_8h_a668883f8c93cffdf3d9d754316009b25}\label{header_8h_a668883f8c93cffdf3d9d754316009b25} 
+\index{header.h@{header.h}!encontrarMaiorElemento@{encontrarMaiorElemento}}
+\index{encontrarMaiorElemento@{encontrarMaiorElemento}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{encontrarMaiorElemento()}{encontrarMaiorElemento()}}
+{\footnotesize\ttfamily int encontrar\+Maior\+Elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Encontra o maior elemento na matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz na qual encontrar o maior elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array com dois elementos\+: o maior valor encontrado e a sua posição na matriz 
+\end{DoxyReturn}
+\Hypertarget{header_8h_a4c13959933ea63cd594a5166946dd1bd}\label{header_8h_a4c13959933ea63cd594a5166946dd1bd} 
+\index{header.h@{header.h}!freeMatriz@{freeMatriz}}
+\index{freeMatriz@{freeMatriz}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{freeMatriz()}{freeMatriz()}}
+{\footnotesize\ttfamily void free\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para a matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz a ser libertada \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Guarda o ponteiro atual
+
+\texorpdfstring{$<$}{<} Move para o próximo elemento
+
+\texorpdfstring{$<$}{<} Liberta a memória do elemento temp
+
+\texorpdfstring{$<$}{<} Liberta a memória da estrutura da matriz\Hypertarget{header_8h_a5cc30657a2083fa215e4294b2c65deb8}\label{header_8h_a5cc30657a2083fa215e4294b2c65deb8} 
+\index{header.h@{header.h}!imprimirMatriz@{imprimirMatriz}}
+\index{imprimirMatriz@{imprimirMatriz}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{imprimirMatriz()}{imprimirMatriz()}}
+{\footnotesize\ttfamily void imprimir\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Imprime os dados da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz a ser impressa \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Nova linha depois de imprimir uma linha completa\Hypertarget{header_8h_aa97b369cffc8d677119a2825f64ba89c}\label{header_8h_aa97b369cffc8d677119a2825f64ba89c} 
+\index{header.h@{header.h}!lerFicheiro@{lerFicheiro}}
+\index{lerFicheiro@{lerFicheiro}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{lerFicheiro()}{lerFicheiro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*} ler\+Ficheiro (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{ficheiro\+Txt }\end{DoxyParamCaption})}
+
+
+
+Lê os dados de um ficheiro de texto e cria uma matriz a partir deles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro\+Txt} & Nome do ficheiro de texto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o início da matriz 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Em baixo no ~\newline
+ avanca 1 linha\Hypertarget{header_8h_accc8fc328f6173f56159619e9a3e16d1}\label{header_8h_accc8fc328f6173f56159619e9a3e16d1} 
+\index{header.h@{header.h}!removerColuna@{removerColuna}}
+\index{removerColuna@{removerColuna}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{removerColuna()}{removerColuna()}}
+{\footnotesize\ttfamily void remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Remove uma coluna da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz da qual remover a coluna \\
+\hline
+{\em coluna} & Índice da coluna a ser removida \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Liberta a memória do elemento removido
+
+\texorpdfstring{$<$}{<} Avança para o próximo elemento na mesma coluna\Hypertarget{header_8h_a21d2aad173ba45788d673bf474442e9f}\label{header_8h_a21d2aad173ba45788d673bf474442e9f} 
+\index{header.h@{header.h}!removerLinha@{removerLinha}}
+\index{removerLinha@{removerLinha}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{removerLinha()}{removerLinha()}}
+{\footnotesize\ttfamily void remover\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+
+
+
+Remove uma linha específica da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz \\
+\hline
+{\em linha} & Número da linha a ser removida \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Encontra a linha a ser removida
+
+\texorpdfstring{$<$}{<} Liberta a memória do elemento removido
+
+\texorpdfstring{$<$}{<} Remove os elementos da linha\Hypertarget{header_8h_a657d3f9e9209b6bf574072725cda2228}\label{header_8h_a657d3f9e9209b6bf574072725cda2228} 
+\index{header.h@{header.h}!somaMatriz@{somaMatriz}}
+\index{somaMatriz@{somaMatriz}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{somaMatriz()}{somaMatriz()}}
+{\footnotesize\ttfamily void soma\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_matriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Soma os elementos da matriz até uma determinada posição e remove a linha e a coluna do maior elemento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Ponteiro para a matriz na qual realizar a soma e remover os elementos \\
+\hline
+{\em posicao} & Posição até à qual realizar a soma e remover os elementos \\
+\hline
+\end{DoxyParams}

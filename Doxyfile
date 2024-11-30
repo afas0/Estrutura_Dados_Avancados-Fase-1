@@ -1,0 +1,5 @@
+PROJECT_NAME           = "Projeto EDA-20750"
+OUTPUT_DIRECTORY       = doc_output
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
